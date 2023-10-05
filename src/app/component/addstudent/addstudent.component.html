@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="my-5">ADD STUDENT</h1>
+    <form [formGroup]="addstudent" (ngSubmit)="sendData()">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" formControlName="sname">
+          <span *ngIf="addstudent.controls.sname.status=='INVALID' && addstudent.controls.sname.dirty " class="error text-danger">Please enter valid name (minimum 3 characters)</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" formControlName="semail">
+          <span *ngIf="addstudent.controls.semail.status=='INVALID' && addstudent.controls.semail.dirty" class="error text-danger">Please enter valid email</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input type="number" class="form-control" formControlName="sage">
+            <span *ngIf="addstudent.controls.sage.status=='INVALID' && addstudent.controls.sage.dirty" class="error text-danger">Please enter valid Age</span>
+        </div>
+        <button  type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

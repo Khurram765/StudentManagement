@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "sname": "Khurram",
+      "semail": "khurram@gmail.com",
+      "sage": 23,
+      "id": 1
+    },
+    {
+      "sname": "Hassan",
+      "semail": "hassan@gmail.com",
+      "sage": 21,
+      "id": 2
+    },
+    {
+      "sname": "Asim Kamal",
+      "semail": "asim@gmail.com",
+      "sage": 20,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "sname": "Owais",
+      "semail": "owais@gmail.com",
+      "sage": 23
+    },
+    {
+      "sname": "Haider",
+      "semail": "haider@gmail.com",
+      "sage": 21,
+      "id": 5
+    },
+    {
+      "sname": "Sohail",
+      "semail": "sohail@gmail.com",
+      "sage": 23,
+      "id": 7
+    },
+    {
+      "sname": "Ali",
+      "semail": "ali@gmail.com",
+      "sage": 24,
+      "id": 8
+    },
+    {
+      "sname": "Hasnain",
+      "semail": "hasnain@gmail.com",
+      "sage": 22,
+      "id": 9
+    },
+    {
+      "sname": "Zaman",
+      "semail": "zaman@gmail.com",
+      "sage": 22,
+      "id": 10
+    },
+    {
+      "sname": "Anwar",
+      "semail": "anwar@gmail.com",
+      "sage": 25,
+      "id": 11
+    },
+    {
+      "sname": "Luqman",
+      "semail": "luqman@gmail.com",
+      "sage": 22,
+      "id": 12
+    }
+  ]
+}

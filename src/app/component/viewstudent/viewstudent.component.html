@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 class="my-5 text-center">ALL STUDENT LIST</h1>
+      <button class="btn btn-primary" routerLink="add">Add+</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data; index as i;">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{item.sname}}</td>
+            <td>{{item.semail}}</td>
+            <td>{{item.sage}}</td>
+            <td>
+              <button class="btn btn-success" ><a class="text-white" style="text-decoration: none;" routerLink="edit/{{item.id}}">Edit</a></button>
+              <button class="btn btn-danger ms-2" (click)="deleteData(item.id)">Delete</button>
+              <button (click)="storeId(item.id)" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Details of Student</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p><strong>Name :</strong> {{this.singleData.sname}}</p>
+              <p><strong>Email :</strong> {{this.singleData.semail}}</p>
+              <p><strong>Age :</strong> {{this.singleData.sage}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
